@@ -1,15 +1,11 @@
-# site-deed-2.0
-# Big Game Survey 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/devsuperior/sds1-wmazoni/blob/master/LICENSE) 
+# Site deed
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/King-ego/site-deed-2.0/blob/main/LICENSE) 
 
 # Sobre o projeto
 
-https://wmazoni-sds1.netlify.app
+Site deed é um modelo de aplicação web front-end aplicando pequenos passos em linguagem back-end com a introdução de um login fixo.
 
-Big Game Survey é uma aplicação full stack web e mobile construída durante a 1ª edição da **Semana DevSuperior** (#sds1), evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
-
-A aplicação consiste em uma pesquisa de preferência de games, onde os dados são coletados no app mobile, e depois são listados no app web, que também apresenta um dashboard com gráficos baseados nestes dados.
-
+A aplicação consiste em uma apresentaão de uma empresa, onde os dados são de feedback, e são mostrados os serviços.
 ## Layout mobile
 ![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
 
