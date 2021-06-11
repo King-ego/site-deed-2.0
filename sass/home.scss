@@ -1,0 +1,100 @@
+@import './color';
+@import './base';
+@import './header';
+//-------------------------------------------------
+.home-section-one{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    &::after{
+        content: "";
+        background: $backgroundBlack url('../img/SiteArtboard.jpg') no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+.section-one{
+    width: 100%;
+    height: 100%;
+    padding-top: 124px;
+    display: flex;
+}
+.section-one-right{
+    flex: 50%;
+    &__internal{
+        img{
+            width: 95%;
+        }
+    }
+}
+.section-one-left{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    &__internal{
+        margin-left: 8vw;
+        h1{
+            font-size: 4rem;
+            color: $colorTexMenu;
+            font-family: helvetica, sans-serif;
+            font-weight: 100;
+        }
+        p{
+            color: $colorTexMenu;
+            font-size: 1.4rem;
+            width: 360px;
+            margin-bottom: 10px;
+            font-family: 'Spartan', sans-serif;
+            font-weight: 100;
+        }
+        a{
+            padding: 10px;
+            background: $colorLineBottom;
+            color: $colorTexMenu;
+            text-decoration: none;
+            font-family: 'Spartan', sans-serif;
+            border-radius: 10px;
+        }
+    }
+}
+.section-form{
+    width:100%;
+    height:600px;
+    @extend .flex;
+}
+.div-form{
+    width: 400px;
+    height: 400px;
+    background: transparent;
+}
+.div-form form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.comments{
+    resize: none;
+}
+.div-form label, input[type=submit]{
+    margin-top: 20px;
+}
+.noSumit{
+    color: $colorLineBottom;
+    &__verifi{
+        outline-color:$backgroundBlack; 
+        border:1px solid $colorLineBottom;
+    }
+}
+.yeSumit{
+    color: $formOk;
+    &__verifi{
+        outline-color:$backgroundBlack;
+        border:1px solid $formOk;
+    }
+}
+

@@ -1,0 +1,36 @@
+@import './color';
+@import './base';
+@import './header';
+header{
+    top:0;
+}
+.container{
+    @extend .flex;
+    flex-direction: row;
+    width: 100%;
+    height: 658px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        background: $backgroundBlack url('../img/SiteArtboard.jpg');
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+.box{
+    background: $backgroundBlack;
+    height: 400px;
+    width: 400px;
+    @extend .flex;
+    form{
+        display: flex;
+        flex-direction: column;
+        label{
+            color: $colorTexMenu;
+        }
+    }
+}

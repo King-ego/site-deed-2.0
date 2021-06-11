@@ -1,0 +1,263 @@
+@font-face {
+  font-family: helvetica;
+  src: url("../font/helvetica-compressed-5871d14b6903a.otf");
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.font, .line-menu__li, .line-menu__li-hover {
+  font-family: 'Spartan', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin: 0 20px;
+}
+
+.celulas, .about-table div, .action {
+  border: 1px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.flex, .about-table, .principal, .principal__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 6vw;
+}
+
+.line-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.line-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.line-menu__li {
+  width: 100px;
+  border-bottom: 1px solid #fd3d3d;
+}
+
+.line-menu__li-hover {
+  position: relative;
+}
+
+.line-menu__li-hover span {
+  position: absolute;
+}
+
+.line-menu__li-hover:hover::after {
+  content: '';
+  display: block;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 1px;
+  background-color: #fd3d3d;
+  -webkit-animation: mymove .5s;
+          animation: mymove .5s;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes mymove {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.new-list {
+  color: #ffffff;
+  margin-left: -20px;
+}
+
+.conteudo {
+  position: fixed;
+  width: 40vw;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #ffffff;
+  z-index: 999;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: scroll;
+}
+
+.conteudo__conteudoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.conteudo__conteudoNone {
+  display: none;
+}
+
+.sorte {
+  top: 50px;
+  position: absolute;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.muita {
+  text-align: justify;
+}
+
+.close {
+  z-index: 999;
+  text-align: center;
+  padding-top: 0.15%;
+  position: fixed;
+  top: 15px;
+  right: 37vw;
+  border: 2px solid #fd3d3d;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.close::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #1e1e1e;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.about-table {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.id {
+  width: 5%;
+  cursor: pointer;
+}
+
+.name {
+  width: 15%;
+  cursor: pointer;
+}
+
+.email {
+  width: 35%;
+  cursor: pointer;
+}
+
+.comments {
+  width: 35%;
+  cursor: pointer;
+}
+
+.action {
+  width: 10%;
+}
+
+.principal {
+  margin-top: 150px;
+  width: 800px;
+}
+
+.principal__table {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.principal__table div {
+  border: 1px solid #1e1e1e;
+}
+
+.principal__table__id {
+  width: 5%;
+}
+
+.principal__table__name {
+  width: 15%;
+}
+
+.principal__table__email {
+  width: 35%;
+}
+
+.principal__table__comments {
+  width: 35%;
+}
+
+.principal__table__action {
+  width: 10%;
+}
+/*# sourceMappingURL=comments.css.map */

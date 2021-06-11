@@ -1,0 +1,113 @@
+@import './color';
+@import './base';
+@import './header';
+.conteudo{
+    position:fixed; 
+    width:40vw;
+    top:0;
+    bottom: 0;
+    right:0;
+    background: $colorTexMenu;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    &__conteudoFlex{
+        display: flex;
+    } 
+    &__conteudoNone{
+        display: none;
+    }
+}
+.sorte{
+    top: 50px;
+    position: absolute;
+    margin: 0 auto;
+    width: 70%;
+}
+.muita{
+    text-align: justify;
+}
+.close{
+    z-index: 999;
+    text-align: center;
+    padding-top: 0.15%;
+    position: fixed;
+    top: 15px;
+    right: 37vw;
+    border: 2px solid $colorLineBottom;
+    background: $colorTexMenu;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border: 2px solid $backgroundBlack;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        top: 0;
+    }
+}
+.about-table{
+    @extend .flex;
+    flex-direction: row;
+    width:100%;
+    div{
+        @extend .celulas;
+    }
+}
+.id{
+    width:5%;
+    cursor:pointer;
+}
+.name{
+    width:15%;
+    cursor:pointer;
+}
+.email{
+    width:35%;
+    cursor:pointer;
+}
+.comments{
+    width:35%;
+    cursor:pointer;
+}
+.action{
+    width:10%;
+    @extend .celulas;
+}
+.principal{
+    margin-top:150px;
+    @extend .flex;
+    width:800px;
+    &__table{
+        @extend .flex;
+        flex-direction: row;
+        width:100%;
+        div{
+            border:1px solid $backgroundBlack;
+        }
+        &__id{
+            width:5%;
+        }
+        &__name{
+            width: 15%;
+        }
+        &__email{
+            width: 35%;
+        }
+        &__comments{
+            width: 35%;
+        }
+        &__action{
+            width: 10%;
+        }
+    }
+
+}
